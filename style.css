@@ -1,0 +1,603 @@
+:root{
+    --pink: #f14e95;
+    --pink1: #F08FC0;
+    --bg: #0a0a0a;
+    --brown: #835151;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    /* min-height: 8000px; */
+}
+
+.hero::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/poto-1.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    /* filter: grayscale(); */
+}
+.hero{
+    position: relative;
+    min-height: 100vh;
+    /* background-color: var(--bg); */
+}
+
+.hero h1, .hero h4, .hero p{
+    text-shadow: var(--shadow);
+}
+
+/* if namanya panjang silakan atur di setting dibawah ini */
+.hero h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+}
+
+.hero h4{
+    font-size: 1.6rem;
+}
+
+.hero p{
+    font-size: 1.4rem;
+}
+
+.hero a {
+    color: var(--pink);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover{
+    background-color: var(--pink);
+    color: white;
+}
+
+/* navbar */
+.mynavbar{
+    background-color: rgba(255,255,255,0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas{
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title{
+    font-family: 'sacramento', cursive;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.mynavbar .nav-link{
+    text-transform: uppercase;
+}
+
+.home{
+    background-image: url(img/bg/2.png);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6.3rem;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+
+.home h2,
+.info h2,
+.story h2,
+.gallery h2,
+.gifts h2,
+.rsvp h2{
+    color: var(--pink);
+    font-family: 'sacramento',cursive;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.home h3{
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home p{
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.home .couple{
+    margin-top: 100px;
+}
+
+.home .couple h3{
+    font-family: 'sacramento', cursive;
+    font-size: 2.4rem;
+    color: var(--pink);
+}
+
+.home .couple img{
+    width:100%;
+}
+
+.home .love{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+}
+
+.home .love i{
+    margin: auto;
+    color: var(--pink);
+}
+
+/* section info */
+.info{
+    background: #835151;
+    color: #ffff;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.info .alamat{
+    font-size: 1.1rem;
+}
+
+.info .description{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.info .card{
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #ffff !important;
+    border: 1px solid #999;
+}
+
+.info .card-header{
+    border-bottom: 1px solid #999;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.info .card-body{
+    font-size: 1rem;
+}
+
+.info .card-footer{
+    border-top: 1px solid #999;
+    color: #fff !important;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* section story */
+.story{
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    background-image: url(img/bg/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.story span{
+    text-transform: uppercase;
+    color: #666;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.story p{
+    font-size: 1.1rem;
+    font-weight: 300;
+
+}
+
+.timeline{
+    list-style: none;
+    padding: 1.4rem 0 ;
+    margin-top: 1rem;
+    position: relative;
+    /* background-color: var(--pink); */
+}
+
+.timeline::before{
+    content: '';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+    left: 50%;
+}
+/* lanjut bikin sturktur li nya  */
+
+.timeline li{
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.timeline li::before,
+.timeline li::after{
+    content: '';
+    display: table;
+}
+ 
+.timeline li::after{
+    clear: both;
+}
+
+.timeline li .timeline-image{
+    width: 160px;
+    height: 160px;
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* panel bubel */
+.timeline li .timeline-panel{
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 8px;
+}
+
+.timeline li .timeline-panel::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    /* background-color: black; */
+    right: -15px;
+    top: 90px;
+}
+
+.timeline li .timeline-panel::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    right: -14px;
+    top: 91px;
+}
+/* dibagian timeline kita bisa memodifikasi bebas sesuai ide */
+
+
+.timeline li.timeline-inverted .timeline-panel{
+    float: right;
+}
+/* ubah arah spiit bbuble /awan */
+.timeline li.timeline-inverted .timeline-panel::before{
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+}
+
+/* section gallery */
+.gallery{
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    background: #835151 ;
+}
+
+.gallery span{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.gallery p{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+
+
+
+/* section rsvp */
+.rsvp{
+    /* padding-top: 10rem;
+    padding-bottom: 8rem;
+    background: #fff; */
+     padding-top: 10rem;
+    padding-bottom: 8rem;
+    background-image: url(img/bg/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rsvp h2{
+    font-size: 4.5rem;
+}
+
+.rsvp p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #000;
+}
+
+.rsvp button{
+    background-color: var(--pink);
+    color: #000;
+    border: 1px solid var(--pink);
+}
+
+.rsvp button:hover{
+    background-color: #fff;
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+
+
+
+
+/* section gifts */
+.gifts{
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    background-color: #835151;
+    /* background-image: url(img/bg/2.png); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+
+.gifts span{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.1rem;
+    display: block;
+}
+
+.gifts p{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.gifts li{
+    padding: 1rem;
+}
+
+.gifts .rekening img{
+    width: 6rem;    
+}
+
+.gifts .rekening .no-rekening{
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+/* fitur copy */
+.gifts .rekening .copy{
+    color: #666666e4;
+    margin-left: 1rem;
+}
+
+.gifts .rekening .copy:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+.gifts .rekening input{
+    /* table-layout: none; */
+    border: none;
+    width: 8rem;
+}
+
+.gifts .rekening button{
+    border: none;
+    background-color: #fff;
+}
+
+/* section audio */
+.audio {
+    
+}
+
+
+
+footer{
+    height: 8rem;
+    padding: 2rem;
+    background-color: var(--pink);
+    color: #fff;
+}
+
+footer a{
+    color: var(--bg);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* medai Queary */
+/* extra large */
+@media(max-width: 1200px){
+    .home .love{
+    transform: translateX(-50%) translateY(45px);
+
+    }
+}
+
+/* Laptop */
+@media(max-width: 922px){
+    html{
+        font-size: 75%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 70px;
+    }
+
+    .home .love {
+        display: none;
+    }
+
+    .timeline::before{
+        left: 65px;
+    }
+
+    .timeline li .timeline-image{
+        left: 20px;
+        margin-left: 45px;
+        top:16px;
+    }
+
+    .timeline li .timeline-panel{
+        width: calc((100% - 200px));
+        float: right;
+    }
+
+    .timeline li .timeline-panel::before{ 
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    .timeline li .timeline-panel::after{
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
+
+    }
+}
+
+/* Tablet */
+@media(max-width: 768px){
+    html{
+        font-size: 62.5%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 60px;
+        margin: 5px;
+    }
+
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .timeline li .timeline-image{
+        width: 140px;
+        height: 140px; 
+    }
+
+    .timeline li .timeline-panel{
+        margin-top: 1.2rem;
+    }
+
+    .timeline li .timeline-panel::before{
+        top: 50px;
+    }
+
+    .timeline li .timeline-panel::after{
+        top: 51px;
+    }
+}
+
+/* mobile */
+@media(max-width: 576px){
+    html{
+        font-size: 60%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 45px;
+        margin: 5px;
+    }
+
+    .timeline li .timeline-image{
+        width: 100px;
+        height: 100px;
+    }
+
+    .timeline li .timeline-panel{
+        width: 65%;
+        transform: translateX(-20px);
+    }
+
+    .timeline li.timeline-panel::before{
+        top: -10px;
+    }
+
+    .timeline li.timeline-panel::after{
+        top: -11px;
+    }
+
+    .gallery .row .gallery-lightbox img{
+        width: calc((100% - 100px)) !important;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* untuk media quaery atau ukuran dari view bisa kita mpdifikasi seperti menghioangkan spiit bublelnya */

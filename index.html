@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Komar & Vivi Wedding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- link fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- simply countdown -->
+    <link
+      rel="stylesheet"
+      href="simplyCountdown/simplyCountdown.theme.default.css"
+    />
+    <script src="simplyCountdown/simplyCountdown.min.js"></script>
+
+    <!-- bosstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- feather icon -->
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- halaman pertama dari undangan -->
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <div>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Komar & Vivi</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
+      </div>
+    </section>
+
+    <!-- navbar bosstrap start -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Komar & Vivi</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Komar & Vivi
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar bosstrap end -->
+
+    <!-- section home start -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>
+              Diselenggarakan pada 12 Desember 2025 di Keteguhan, Bandar
+              Lampung.
+            </h3>
+            <p>
+              Oleh karena itu, dengan segala hormat, kami bermaksud untuk
+              mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan
+              kami.
+            </p>
+          </div>
+        </div>
+
+        <!-- coupel  -->
+        <div class="row couple">
+          <!-- pria -->
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Aceng Komar</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat laboriosam consectetur explicabo recusandae
+                  voluptatum. Voluptas.
+                </p>
+                <p>
+                  Putra dari Bpk. Lorem <br />
+                  dan <br />
+                  Ibu Ipsum
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/pt-couple/1.png"
+                  alt="Aceng Komar"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+
+          <span class="love"><i class="bi bi-heart-fill"></i></span>
+
+          <!-- wanita -->
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/pt-couple/2.png"
+                  alt="Vivi"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Vivi</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat laboriosam consectetur explicabo recusandae
+                  voluptatum. Voluptas.
+                </p>
+                <p>
+                  Putra dari Bpk. Lorem <br />
+                  dan <br />
+                  Ibu Ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section home end -->
+
+    <!-- section info start -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-md-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Alamat: Hotel Novotel <br />
+              Jl. Gatot Subroto No.136, Sukaraja, Kec. Bumi Waras, Kota Bandar
+              Lampung
+            </p>
+            <a
+              href="https://goo.gl/maps/ZrECRGhysPbQatmWA"
+              target="_blank"
+              class="btn btn-light btn-sm my-3"
+              >Klik untuk membuka peta</a
+            >
+            <p class="description">
+              Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di
+              tujuan namun tidak ada jalur kuning dan tanda-tanda sedang
+              dilangsungkan pernikahan, boleh jadi anda salah jadwal, atau salah
+              alamat.
+            </p>
+          </div>
+        </div>
+
+        <!-- tabel jadwal akda dan repsesi dll.. -->
+        <div class="row justify-content-center">
+          <div class="col-md-5 col-10 mb-5">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 17 Desember 2023 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-body-secondary">
+                saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuna seluruh proses.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - selesai</span>
+                  </div>
+
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 17 Desember 2023 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-body-secondary">
+                saat acara resepsi diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuna seluruh proses.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section info end -->
+
+    <!-- section story start -->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vero
+              atque provident illo modi, tempora eaque cum corrupti sunt
+              reprehenderit!
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/story/gramedia.jpg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>1 januari 2006</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adiplorem100 Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti iure sed fugit nisi in, odit nulla, soluta sit
+                      fuga recusandae dignissimos earum ut deserunt, culpa
+                      similique doloribus necessitatibus et architecto itaque
+                      voluptatibus. Sapiente itaque iure nisi. Nostrum, saepe?
+                      Sequi tenetur, error, voluptates excepturi delectus magnam
+                      illo placeat quia itaque molestiae libero animi aut
+                      laborum magni modi enim eos, explicabo autem soluta
+                      consequuntur eveniet culpa quis? Quod voluptatum, rerum
+                      sed, quis ipsum ad possimus recusandae eveniet commodi
+                      natus quae voluptates. Ab magni saepe quas, accusantium
+                      est nam laboriosam animi distinctio veniam, similique
+                      minus esse minima et ex adipisci inventore soluta
+                      vero.isicing elit. Illo odit exercitationem consequatur
+                      aut! Non, similique.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/300/300)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>1 januari 2006</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit. Provident inventore soluta
+                      ullam ut eaque, voluptate unde officiis, voluptatum sed
+                      quo molestiae tempore nemo ipsa accusantium quos, itaque
+                      rem cupiditate doloribus? Ex cupiditate ut animi velit.
+                      Quos consectetur ea nihil ducimus, voluptatibus corrupti,
+                      reiciendis facilis eaque quia expedita adipisci? Quidem,
+                      ipsa reiciendis obcaecati molestias eum repudiandae cumque
+                      laboriosam delectus esse. Suscipit fuga voluptatibus
+                      laboriosam, ullam impedit, incidunt quis nostrum quia
+                      reprehenderit perferendis non vel! Quo, possimus ullam.
+                      Commodi dolorum, labore doloribus, ipsam voluptatibus id
+                      dolore autem nesciunt quasi sunt error placeat vitae. Enim
+                      autem eum sit aspernatur velit consequatur modi excepturi.
+                      consectetur adipisicing elit. Illo odit exercitationem
+                      consequatur aut! Non, similique.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/301/300)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>1 januari 2006</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet,Lorem ipsum, dolor sit amet
+                      consectetur adipisiclorem40 Lorem ipsum dolorquam hic
+                      itaque expedita maxime quia pariatur ex molestiae quod
+                      reiciendis omnis porro! Soluta, alias. Amet eligendi
+                      placeat reprehenderit perferendis, commodi ipsa sequi non
+                      iusto, illo ad velit, debitis illum voluptatem laudantium
+                      natus veritatis modi temporibus accusamus expedita
+                      perspiciatis quod hic corporis. Asperiores dolorum eos,
+                      illo eveniet ut est odit odio, eius cupiditate eum
+                      mollitia error, iste sed consequatur nisi amet officia
+                      illum?ing elit. Modi dolore amet, consequuntur deserunt
+                      asperiores quis possimus doloremque ad pariatur natus.
+                      consectetur adipisicing elit. Illo odit exercitationem
+                      consequatur aut! Non, similique.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section story end -->
+
+    <!-- section gallery start -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori Kisah Kami</span>
+            <h2>Gallery Poto</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem, corrupti.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+        >
+          <div class="col mt-3 gallery-lightbox">
+            <a
+              href="img/gallery/1.jpg"
+              data-toggle="lightbox"
+              data-gallery="mygallery"
+              data-caption="Komar dan Vivi 1"
+            >
+              <img
+                src="img/gallery/thumbnail/1.jpg"
+                alt="Komar dan Vivi 1"
+                class="img-fluid rounded w-100"
+              />
+            </a>
+          </div>
+
+          <div class="col mt-3 gallery-lightbox">
+            <a
+              href="img/gallery/2.jpg"
+              data-toggle="lightbox"
+              data-gallery="mygallery"
+              data-caption="Komar dan Vivi 2"
+            >
+              <img
+                src="img/gallery/thumbnail/2.jpg"
+                alt="Komar dan Vivi 2"
+                class="img-flui d rounded w-100"
+              />
+            </a>
+          </div>
+
+          <div class="col mt-3 gallery-lightbox">
+            <a
+              href="img/gallery/3.jpg"
+              data-toggle="lightbox"
+              data-gallery="mygallery"
+              data-caption="Komar dan Vivi 3"
+            >
+              <img
+                src="img/gallery/thumbnail/3.jpg"
+                alt="Komar dan Vivi 1"
+                class="img-fluid rounded w-100"
+              />
+            </a>
+          </div>
+
+          <div class="col mt-3 gallery-lightbox">
+            <a
+              href="img/gallery/4.jpg"
+              data-toggle="lightbox"
+              data-gallery="mygallery"
+              data-caption="Komar dan Vivi 4"
+            >
+              <img
+                src="img/gallery/thumbnail/4.jpg"
+                alt="Komar dan Vivi 1"
+                class="img-fluid rounded w-100"
+              />
+            </a>
+          </div>
+
+          <div class="col mt-3 gallery-lightbox">
+            <a
+              href="img/gallery/5.jpg"
+              data-toggle="lightbox"
+              data-gallery="mygallery"
+              data-caption="Komar dan Vivi 5"
+            >
+              <img
+                src="img/gallery/thumbnail/5.jpg"
+                alt="Komar dan Vivi 1"
+                class="img-fluid rounded w-100"
+              />
+            </a>
+          </div>
+
+          <div class="col mt-3 gallery-lightbox">
+            <a
+              href="img/gallery/6.jpg"
+              data-toggle="lightbox"
+              data-gallery="mygallery"
+              data-caption="Komar dan Vivi 6"
+            >
+              <img
+                src="img/gallery/thumbnail/6.jpg"
+                alt="Komar dan Vivi 1"
+                class="img-fluid rounded w-100"
+              />
+            </a>
+          </div>
+
+          <div class="col mt-3 gallery-lightbox">
+            <a
+              href="img/gallery/7.jpg"
+              data-toggle="lightbox"
+              data-gallery="mygallery"
+              data-caption="Komar dan Vivi 7"
+            >
+              <img
+                src="img/gallery/thumbnail/7.jpg"
+                alt="Komar dan Vivi 1"
+                class="img-fluid rounded w-100"
+              />
+            </a>
+          </div>
+
+          <div class="col mt-3 gallery-lightbox">
+            <a
+              href="img/gallery/8.jpg"
+              data-toggle="lightbox"
+              data-gallery="mygallery"
+              data-caption="Komar dan Vivi 8"
+            >
+              <img
+                src="img/gallery/thumbnail/8.jpg"
+                alt="Komar dan Vivi 1"
+                class="img-fluid rounded w-100"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section gallery end -->
+
+
+        <!-- section rsvp start -->
+        <section id="rsvp" class="rsvp">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-10 text-center">
+                <!-- <span>RSVP</span> -->
+                <h2>konfirmasi Kehadiran</h2>
+                <p>
+                  Silahkan isi form dibawah ini unutuk mengkonfirmasi kehadiran.
+                </p>
+              </div>
+
+              <!-- form pengisian kehadiran undangan  -->
+              <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" 
+                action="https://script.google.com/macros/s/AKfycbxvGOuPAO_0VVmllRsRZ8lnHS3My7NwyG5phYyEIlFCcgJYluvQPTlioIeUzoHmRpiN/exec" id="my-form">
+                <!-- table nama -->
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="nama" name="nama">
+                  </div>
+                </div>
+
+                <!-- table jumlah -->
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="jumlah" class="form-label">Jumlah</label>
+                    <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+                  </div>
+                </div>
+
+                <!-- table konfirmasi status -->
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="jumlah" class="form-label">konfirmasi</label>
+                    <select name="status" id="status" class="form-select">
+                      <option selected>pilih salah satu</option>
+                      <option value="Hadir">Hadir</option>
+                      <option value="Tidak Hadir">Tidak Hadir</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- btn kirim API ke googlesheet -->
+                <div class="col-12" style="margin-top: 35px;">
+                  <button class="btn">kirim</button>
+                </div>
+            </div>
+          </section>
+        <!-- section rsvp end -->
+
+
+    <!-- section gifts start -->
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>share love</span>
+            <h2>Online Gifts</h2>
+            <p>
+              Do'a restu keluarga , sahabat, serta rakan-rakan semua di
+              pernikahan kami sudah sangat cukup sebagai hadiah, tetapi jika
+              memberi merupkan tanda kasih, kami dengan senang hati menerimanya
+              dan tentunya semakin melengkapi kebahagian kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item rekening">
+                <div class="fw-bold"><img src="img/bank/bca.png" alt="bank bca"></div>
+                <div class="no-rekening" style="margin:0;">
+                  123545678 - FAHRI KOMAR
+                  <!-- <input type="text" value="1288963" id="atm-bca" style="display: none;">
+                  <button onclick="copy()">
+                    <i data-feather="copy" class="copy"></i>
+                  </button> -->
+                </div>
+                
+              </li>
+              <li class="list-group-item rekening">
+                <div class="fw-bold"><img src="img/bank/bni.png" alt="bank bni"></div>
+                <div class="no-rekening">
+                  123545678 - FAHRI KOMAR
+                  <!-- <input type="text" value="222222" id="atm-bni" style="display: none;">
+                  <button onclick="">
+                    <i data-feather="copy" class="copy"></i>
+                  </button> -->
+                </div>
+              </li>
+              <li class="list-group-item rekening">
+                <div class="fw-bold"><img src="img/bank/bri.png" alt="bank bri"></div>
+                <div class="no-rekening">
+                  123545678 - FAHRI KOMAR
+                  <!-- <input type="text" value="333333" id="atm-bri" style="display: none;">
+                  <button onclick="">
+                    <i data-feather="copy" class="copy"></i>
+                  </button> -->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+         <!-- section songs start -->
+    <!-- <audio controls class="audio">
+      <source src="https://youtu.be/gxJxK5byoKY?t=120" type="audio/mpeg" />
+      <source src="song/lagu1.mp3" type="audio/mpeg" />
+    </audio> -->
+    <!-- section songs end -->
+
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2023 Komar Wedding. All Right Reserved</small>
+            <small class="block">Design by <a href="https:\\instagram.com/fahxvc">@fahrivirgiawan</a></small>
+
+            <ul class="mt-3">
+              <li>
+                <a href="https:\\instagram.com/fahxvc"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-facebook"></i></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-youtube"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center mb-3">
+            <span>Share Love</span>
+            <h2>Online Gift</h2>
+            <p>
+              Do'a restu keluarga , sahabat, serta rakan-rakan semua di
+              pernikahan kami sudah sangat cukup sebagai hadiah, tetapi jika
+              memberi merupkan tanda kasih, kami dengan senang hati menerimanya
+              dan tentunya semakin melengkapi kebahagian kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-5 col-10 mb-5">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Via Transfer</div>
+              <div class="card-body">
+                <div class="row justify-content-center rekening">
+                  <h5>Fahri virgiawan</h5>
+                  <div class="col-md-6">
+                    <img src="img/bank/bca.png" alt="bank-bca" class="logo-bank">
+                  </div>
+                  <div class="col-md-6 pin-atm"> =
+                    <input type="text" value="1288963" id="atm-bri">
+                    <button onclick="copy1()">
+                      <i data-feather="copy" class="copy"></i>
+                    </button> </div>
+                  <div class="card-border" style="border: 1px solid rgb(167, 166, 166);"></div>
+
+
+                </div>
+
+                <div class="row justify-content-center rekening">
+                  <h5>Fahri virgiawan</h5>
+                  <div class="col-md-6">
+                    <img src="img/bank/bri.png" alt="bank-bca" class="logo-bank">
+                  </div>
+                  <div class="col-md-6 pin-atm"> =
+                    <input type="text" value="1288963" id="atm-bri">
+                    <button onclick="copy2()">
+                      <i data-feather="copy" class="copy"></i>
+                    </button> 
+                  </div>
+                  <div class="card-border" style="border: 1px solid rgb(167, 166, 166);"></div>
+
+                  <div class="row justify-content-center rekening">
+                    <h5>Fahri virgiawan</h5>
+                    <div class="col-md-6">
+                      <img src="img/bank/bni.png" alt="bank-bca" class="logo-bank">
+                    </div>
+                    <div class="col-md-6 pin-atm"> =
+                      <input type="text" value="1288963" id="atm-bri">
+                      <button onclick="copy3()">
+                        <i data-feather="copy" class="copy"></i>
+                      </button> 
+                    </div>
+                    
+                    <div class="card-footer text-body-secondary">
+                      saat acara resepsi diharapkan untuk .
+                    </div>
+  
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- <div class="col-md-5 col-10 mb-5">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Via Transfer</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md">
+                    <div class="rekening bri">
+                      <div class="row justify-content-center">
+                        <div class="col">
+                        <img src="img/bank/bri.png" alt="">
+                        </div>
+                        <div class="col">Fahri</div>  
+                        <div class="col">= 56412364654</div>
+                      </div>
+                    </div> -->
+                      <!-- <img src="img/bank/bri.png" alt="bank bni"/>=
+                      <div class="name-p">Fahri virgiawan</div>=
+                      <input type="text" value="  1288963545" id="atm-bri">
+                      <button onclick="copy1()">
+                        <i data-feather="copy" class="copy"></i>
+                      </button>  
+                    <!-- </div> -->
+
+
+
+                    <!-- <div class="rekening bni">
+                      <div class="name-p">Fahri virgiawan</div>
+                      <img src="img/bank/bni.png" alt="bank bni"/>=
+                      <input type="text" value="  2020202" id="atm-bni">
+                      <button onclick="copy2()">
+                        <i data-feather="copy" class="copy"></i>
+                      </button>  
+                    </div>
+                    <div class="border text-body-secondary"></div>
+                    
+                    <div class="rekening bca">
+                      <div class="name-p">Fahri virgiawan</div>
+                      <img src="img/bank/bca.png" alt="bank bca"/>=
+                      <input type="text" value="  30303030" id="atm-bca">
+                      <button onclick="copy3()">
+                        <i data-feather="copy" class="copy"></i>
+                      </button>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-body-secondary">
+                pastikan nomor yang anda masukkan sesuai dengan rekening diatas.
+              </div> -->
+       
+    <!-- pr menjalankan fungsi dari copy dengan javascript (done but code masih kureng) -->
+    <!-- section gifts end -->
+
+    <!-- ? untuk bagian gifts setiap bank penampung(bca.bni,bri) harus mencantumkan nama penerima-->
+
+  
+
+
+
+   
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- script bosstrap 5 lightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <!-- script countdown -->
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2023, // required
+        month: 12, // required
+        day: 17, // required
+        hours: 8, // Default is 0 [0-23] integer
+        minutes: 0, // Default is 0 [0-59] integer
+        seconds: 0, // Default is 0 [0-59] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
+
+    <!-- script js -->
+    <script src="js/script.js"></script>
+
+    <!-- script feather icon -->
+    <script>
+      feather.replace()
+    </script>
+
+  </body>
+</html>
